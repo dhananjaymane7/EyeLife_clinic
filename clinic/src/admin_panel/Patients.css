@@ -1,0 +1,143 @@
+/* Statistics Section Styling */
+.statistics {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .stat-box {
+    background: linear-gradient(145deg, #e9ecef, #f8f9fa); /* Soft gradient background */
+    padding: 20px;
+    border-radius: 15px; /* Rounded corners */
+    text-align: center;
+    width: 25%;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+  }
+  
+  .stat-box:hover {
+    transform: translateY(-5px); /* Slightly lift on hover */
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+  }
+  
+  .stat-box p {
+    margin-top: 15px;
+    font-size: em; /* Slightly larger font */
+    color: #333;
+    font-weight: bold; /* Darker text for contrast */
+  }
+  
+  .stat-box .icon {
+    display: inline-block;
+    border-radius: 20%; /* Make the icon container circular */
+    border: 2px solid #333; /* Slightly thicker border with a color */
+    background: linear-gradient(145deg, #f8f9fa, #e9ecef); /* Soft gradient background */
+    padding: 5px; /* Increased padding for a better look */
+    font-size: 22px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s; /* Smooth transition for hover effects */
+  }
+  
+  .stat-box .icon:hover {
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+    background: linear-gradient(145deg, #e9ecef, #f8f9fa); /* Change background on hover */
+  }
+  
+  /* Search Input Styling */
+  .search-input {
+    margin-bottom: 20px;
+    padding: 12px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+  }
+  
+  /* Filter Styling */
+  .filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .filters select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+  }
+  
+  /* Patient Table Styling */
+  .patient-table {
+    overflow-x: auto;
+  }
+  
+  .patient-table table {
+    width: 100%;
+    border-collapse: collapse; /* Removed vertical lines */
+  }
+  
+  .patient-table th, .patient-table td {
+    padding: 10px;
+    border: none; /* Removed vertical lines */
+    text-align: left;
+  }
+  
+  .patient-table th {
+    background-color: #f9f9f9;
+    font-weight: bold;
+  }
+  
+  .patient-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .patient-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Button Styling */
+  .save-btn, .cancel-btn, .edit-btn, .delete-btn, .add-patient-btn {
+    margin: 5px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  .save-btn {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .cancel-btn {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .edit-btn {
+    background-color: #2196F3;
+    color: white;
+  }
+  
+  .delete-btn {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .add-patient-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    margin-top: 20px;
+  }
+  
+  .add-patient-btn:hover, .edit-btn:hover, .delete-btn:hover, .save-btn:hover, .cancel-btn:hover {
+    opacity: 0.9;
+  }

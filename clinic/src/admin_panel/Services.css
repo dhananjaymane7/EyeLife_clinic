@@ -1,0 +1,101 @@
+/* Services Table Styling */
+.service-table {
+    margin-top: 20px;
+  }
+  
+  .service-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .service-table th, .service-table td {
+    padding: 10px;
+   border: none;
+    text-align: left;
+  }
+  
+  .service-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .service-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .service-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .service-table .enabled {
+    color: green;
+  }
+  
+  .service-table .disabled {
+    color: red;
+  }
+  
+  .search-input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .edit-btn, .delete-btn, .save-btn, .cancel-btn, .add-btn, .new-service-btn {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .edit-btn {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .delete-btn {
+    background-color: #ff4d4d;
+    color: white;
+  }
+  
+  .save-btn {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .cancel-btn {
+    background-color: #ccc;
+    color: white;
+  }
+  
+  .add-btn {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .new-service-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .edit-btn:hover, .delete-btn:hover, .save-btn:hover, .cancel-btn:hover, .add-btn:hover, .new-service-btn:hover {
+    opacity: 0.8;
+  }
+  
+  .new-service-form {
+    margin-top: 20px;
+  }
+  
+  .new-service-form input, .new-service-form select {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  

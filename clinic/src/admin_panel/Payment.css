@@ -1,0 +1,101 @@
+.payment-table {
+    width: 100%; /* Ensures the table spans the full width of its container */
+    border-collapse: collapse;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+  }
+  
+  /* Optional: Ensure the table header cells (th) have a background color */
+  .payment-table th {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 20px;
+    width: 10%;
+    margin-left: 100px;
+  }
+  
+  /* Ensure all table cells (td) have padding and text alignment */
+  .payment-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    border: none;
+    color: #666;
+  }
+  
+  /* Styling for buttons within table cells */
+  .payment-table .edit-btn,
+  .payment-table .delete-btn,
+  .payment-table .save-btn,
+  .payment-table .cancel-btn {
+    padding: 8px 12px;
+    margin: 4px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .payment-table .edit-btn {
+    background-color: #2196F3;
+    color: white;
+  }
+  
+  .payment-table .delete-btn {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .payment-table .save-btn {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .payment-table .cancel-btn {
+    background-color: #ccc;
+    color: #333;
+  }
+  
+  .payment-table .edit-btn:hover,
+  .payment-table .delete-btn:hover,
+  .payment-table .save-btn:hover,
+  .payment-table .cancel-btn:hover {
+    transform: translateY(-2px);
+  }
+  
+  /* Styling for add payment button */
+  .add-payment-btn {
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .add-payment-btn:hover {
+    background-color: #45a049;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .statistics {
+      flex-direction: column;
+    }
+  
+    .stat-box {
+      margin-bottom: 20px;
+    }
+  
+    .filters {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .filters select {
+      width: 100%;
+    }
+  }

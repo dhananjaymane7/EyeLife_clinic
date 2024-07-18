@@ -1,0 +1,222 @@
+/* General styling for the user dashboard */
+.user-dashboard {
+    display: flex;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling for the left panel */
+.left-panel {
+    width: 250px;
+    background: linear-gradient(135deg, #fff, #4CAF50);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Icon styling */
+.left-panel .icon {
+    font-size: 2rem;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+/* Header styling */
+.left-panel h2 {
+    font-size: 1.5rem;
+    color: #4CAF50;
+    margin-bottom: 40px;
+}
+
+/* Styling for the navigation buttons */
+.nav-button {
+    font-size: 0.9rem;
+    margin: 10px 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #4CAF50;
+    background: linear-gradient(135deg, #fff, #f0f0f0);
+    border-radius: 5px;
+    width: 200px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Add space between icon and text */
+    padding: 10px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.nav-button:hover {
+    background: linear-gradient(135deg, #f0f0f0, #fff);
+    transform: scale(1.05);
+}
+
+.nav-button .fa-icon {
+    margin-right: 10px;
+}
+
+/* Styling for the right panel */
+.right-panel {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Additional styling for the right panel content */
+.right-panel h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.dashboard-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.box1 {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.box1 h4 {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.box1 .chart-container {
+    width: 100%;
+    height: 200px;
+}
+
+/* Specific color styles for boxes */
+.box1.patients {
+    background-color: #e0f7fa;
+    color: #00796b;
+}
+
+.box1.patients .fa-icon {
+    color: #00796b;
+}
+
+.box1.appointments {
+    background-color: #ffe0b2;
+    color: #f57c00;
+}
+
+.box1.appointments .fa-icon {
+    color: #f57c00;
+}
+
+.box1.earnings {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+.box1.earnings .fa-icon {
+    color: #2e7d32;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .user-dashboard {
+        flex-direction: column;
+    }
+
+    .left-panel {
+        width: 100%;
+        text-align: center;
+    }
+
+    .right-panel {
+        padding: 10px;
+    }
+
+    .dashboard-boxes {
+        flex-direction: column;
+    }
+}
+
+.dashboard-about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f0f8ff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.text-content {
+    flex: 1;
+    padding-right: 20px; /* Space between text and image */
+}
+
+.about-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for text content */
+.dashboard-about h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.dashboard-about p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.dashboard-about button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.dashboard-about button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .dashboard-about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-content {
+        padding-right: 0;
+        padding-bottom: 20px;
+    }
+
+    .about-image {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+

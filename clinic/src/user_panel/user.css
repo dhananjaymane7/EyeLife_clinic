@@ -1,0 +1,73 @@
+/* General styling for the user dashboard */
+.user-dashboard {
+    display: flex;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling for the left panel */
+.left-panel {
+    width: 250px;
+    background: linear-gradient(135deg, #fff, #4CAF50);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Icon styling */
+.left-panel .icon {
+    font-size: 2rem;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+/* Header styling */
+.left-panel h2 {
+    font-size: 1.5rem;
+    color: #4CAF50;
+    margin-bottom: 40px;
+}
+
+/* Styling for the navigation buttons */
+/* Styling for the navigation buttons */
+.nav-button {
+    font-size: 0.9rem;
+    margin: 10px 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #4CAF50;
+    background: linear-gradient(135deg, #fff, #f0f0f0);
+    border-radius: 5px;
+    width: 200px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Add space between icon and text */
+    padding: 10px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+
+.nav-button:hover {
+    background: linear-gradient(135deg, #f0f0f0, #fff);
+    transform: scale(1.05);
+}
+
+.nav-button .fa-icon {
+    margin-right: 10px;
+}
+
+/* Styling for the right panel */
+.right-panel {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Additional styling for the right panel content */
+.right-panel h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}

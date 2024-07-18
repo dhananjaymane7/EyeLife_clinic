@@ -1,0 +1,98 @@
+/* Medicine Table Styling */
+.medicine-table {
+    margin-top: 20px;
+  }
+  
+  .medicine-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .medicine-table th, .medicine-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .medicine-table th {
+    background-color: #f2f2f2;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .medicine-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .medicine-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .search-input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .filters select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .status.available {
+    color: green;
+  }
+  
+  .status.out-of-stock {
+    color: red;
+  }
+  
+  .edit-btn, .delete-btn, .save-btn, .cancel-btn, .add-medicine-btn {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .edit-btn {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .delete-btn {
+    background-color: #ff4d4d;
+    color: white;
+  }
+  
+  .save-btn {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .cancel-btn {
+    background-color: #ccc;
+    color: white;
+  }
+  
+  .add-medicine-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .edit-btn:hover, .delete-btn:hover, .save-btn:hover, .cancel-btn:hover, .add-medicine-btn:hover {
+    opacity: 0.8;
+  }
+  

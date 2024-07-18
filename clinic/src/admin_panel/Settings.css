@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Global settings */
+.settings {
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.settings-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.settings-left {
+    width: 30%;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.settings-left p {
+    text-align: center;
+    color: #777; /* Changed to a more subtle color */
+    font-weight: 400; /* Lighter font weight */
+}
+
+.settings-right {
+    width: 55%;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.settings-left:hover,
+.settings-right:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 2px solid #4CAF50;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-photo:hover {
+    transform: scale(1.1);
+}
+
+.placeholder-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #f0f0f0; /* Lighter background */
+    display: flex;
+    margin-left: 30%;
+    margin-top: 30%;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #999; /* Subtle color */
+    border: 2px dashed #ccc; /* Lighter dashed border */
+}
+
+.drag-area {
+    border: 2px dashed #4CAF50;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: background 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.drag-area input {
+    display: none;
+}
+
+.drag-area:hover {
+    background: #f9f9f9;
+}
+
+.drag-area label {
+    cursor: pointer;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.settings-right label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333; /* Darker color for labels */
+    font-weight: 500; /* Slightly bolder font weight */
+}
+
+.settings-right select,
+.settings-right input {
+    width: 100%;
+    padding: 10px;
+    height: 45px;
+    font-weight: 400; /* Lighter font weight */
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.settings-right select:focus,
+.settings-right input:focus {
+    border-color: #4CAF50;
+}
+
+.settings-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.delete-btn1,
+.save-btn1 {
+    padding: 10px 20px;
+    border: none;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.delete-btn1 {
+    background-color: #f44336;
+    color: white;
+    width: 45%;
+    font-weight: 500; /* Bolder font weight for buttons */
+}
+
+.save-btn1 {
+    background-color: #4CAF50;
+    color: white;
+    width: 45%;
+    font-weight: 500; /* Bolder font weight for buttons */
+}
+
+.delete-btn1:hover,
+.save-btn1:hover {
+    background: #333;
+    transform: translateY(-2px);
+}
+
+/* Animation for form opening */
+.settings-container {
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
